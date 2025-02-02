@@ -14,7 +14,7 @@ export class MyDocumentsListTool extends Tool<JSONToolOutput<string[]>> {
   description = "Returns the list of documents files names.";
 
 
-  constructor(private readonlyfolder: string) {
+  constructor(private readonly folder: string) {
     super()
   }
 
